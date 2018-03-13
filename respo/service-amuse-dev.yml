@@ -3,12 +3,12 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8760/eureka/
+      defaultZone: http://192.168.1.180:8760/eureka/
 spring:
   application:
     name: service-amuse
   zipkin:
-    base-url: http://localhost:9411
+    base-url: http://192.168.1.180:9411
   datasource:
     url: jdbc:mysql://192.168.1.180:3306/db_amuse?useUnicode=true&characterEncoding=utf-8
     username: root
@@ -16,5 +16,3 @@ spring:
     driverClassName: com.mysql.jdbc.Driver
 mybatis:
   mapper-locations: classpath:mapper/*.xml
-
-foo: 2
