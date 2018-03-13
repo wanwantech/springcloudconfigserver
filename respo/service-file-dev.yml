@@ -1,0 +1,23 @@
+server:
+  port: 9700
+  ssl:
+    key-store: classpath:file.wanwantech.cn.jks
+    key-password: glkj6666
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.1.180:8760/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+spring:
+  application:
+    name: service-file
+  zipkin:
+    base-url: http://192.168.1.182:9411
+file:
+  domain: https://file.wanwantech.cn:9700/
+  rootPath: D:/playImg
+  image:
+    imgExtension: jpg,jpeg,png,gif,bmp
+    rootPath: ${file.rootPath}/img/
