@@ -1,8 +1,5 @@
 server:
   port: 9700
-  ssl:
-    key-store: classpath:file.wanwantech.cn.jks
-    key-password: glkj6666
 eureka:
   client:
     service-url:
