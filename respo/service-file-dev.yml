@@ -18,3 +18,7 @@ file:
   image:
     imgExtension: jpg,jpeg,png,gif,bmp
     rootPath: ${file.rootPath}/img/
+multipart:
+  enabled: true
+  max-file-size: 50mb
+  max-request-size: 50mb
