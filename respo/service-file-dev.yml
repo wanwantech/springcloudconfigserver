@@ -23,4 +23,4 @@ file:
   image:
     imgExtension: jpg,jpeg,png,gif,bmp
     rootPath: ${file.rootPath}/img/
-    watermark: imageView2/0/q/75|watermark/2/text/546p546p56eR5oqA/font/6buR5L2T/fontsize/280/fill/IzAwMDAwMA==/dissolve/100/gravity/SouthEast/dx/10/dy/10
+    watermark: 
