@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: service-social
+  cloud:
+    config:
+      label: master
+      profile: dev
+      uri: http://192.168.1.180:8888
