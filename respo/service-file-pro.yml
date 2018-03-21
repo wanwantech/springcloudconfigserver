@@ -1,0 +1,26 @@
+server:
+  port: 19700
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8760/eureka/
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
+spring:
+  application:
+    name: service-file
+  zipkin:
+    base-url: http://localhost:9411
+  http:
+    multipart:
+      enabled: true
+  mvc:
+    static-path-pattern: classpath*:/static/**
+file:
+  domain: http://p5mabezxu.bkt.clouddn.com/
+  rootPath: E:/playImg
+  image:
+    imgExtension: jpg,jpeg,png,gif,bmp
+    rootPath: ${file.rootPath}/img/
+    watermark: 
